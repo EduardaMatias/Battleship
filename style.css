@@ -1,0 +1,57 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+div#board {
+    position: relative;
+    width: 1024px;
+    height: 600px;
+    margin: auto;
+    background: url("/img/fundo.jpg") no-repeat;
+    gap: 20px;
+}
+
+div#messageArea {
+    position: absolute;
+    color: rgb(83, 175, 19);
+    top: 0px;
+    left: 0px;
+}
+
+form {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: rgb(83, 175, 19);
+}
+
+form input {
+    background-color: rgb(152, 207, 113);
+    border-color: rgb(83, 175, 19);
+    font-size: 1em;
+}
+
+table {
+    position: absolute;
+    left: 110px;
+    top: 60px;
+    border-spacing: 0px;
+}
+
+td {
+    width: 58px;
+    height: 58px;
+}
+
+.hit {
+    background: url("/img/hit.png") no-repeat center;
+}
+
+.miss {
+    background: url("/img/miss.png") no-repeat center;
+}
