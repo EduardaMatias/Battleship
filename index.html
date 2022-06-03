@@ -11,9 +11,14 @@
 
 <body>
     <div id="board">
-        <form>
-            <input type="text" id="guessInput" placeholder="A0">
-            <input type="button" id="fireButton" value="Fire!">
+        <form id="form">
+            <div class="input-text" id="input-text">
+                <input type="text" id="guessInput" placeholder="A0">
+                <input type="button" id="fireButton" value="Fire!">
+            </div>
+            <dib class="input-button" id="input-button">
+                <button class="buttonJogarNovamente" onclick="jogarNovamente()">Jogar novamente</button>
+            </dib>   
         </form>
 
         <div id="messageArea"></div>
@@ -84,7 +89,7 @@
             </tr>
         </table>
     </div>
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -33,6 +33,8 @@ var view = {
           if (this.isSunk(ship)) {
             view.displayMessage("You sank my battleship!");
             this.shipsSunk++;
+            document.getElementById("input-text").style.display = 'none';
+            document.getElementById("input-button").style.display = 'block';
           }
           return true;
         }
@@ -146,3 +148,6 @@ var view = {
   }
   window.onload = init;
   
+  function jogarNovamente(){
+    document.location.reload(true)
+  }
